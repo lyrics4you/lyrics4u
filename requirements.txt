@@ -1,3 +1,6 @@
 fastapi
 transformers
 torch
+BeautifulSoup
+requests
+numpy
