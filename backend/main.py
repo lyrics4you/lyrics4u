@@ -6,6 +6,11 @@ from predictions import predictions
 app = FastAPI()
 
 
+@app.get("/root")
+async def root():
+    return {"result": "Hello World"}
+
+
 @app.get("/songs")
 async def get_songs_info(query: str):
     song_info = get_song_list(query)
@@ -14,7 +19,7 @@ async def get_songs_info(query: str):
     return {"result": song_info}
 
 
-@app.get("/prediction")
+@app.get("/predictions")
 async def recommends_songs(song_id: str):
     print(song_id)
     try:
