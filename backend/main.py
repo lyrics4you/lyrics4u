@@ -14,8 +14,9 @@ async def get_songs_info(query: str):
     return {"result": song_info}
 
 
-@app.get("/preditions")
+@app.get("/prediction")
 async def recommends_songs(song_id: str):
+    print(song_id)
     try:
         song = get_song_info(song_id)
         lylics = song["lyrics"]
