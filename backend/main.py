@@ -1,12 +1,11 @@
 from fastapi import FastAPI, HTTPException
-from utils.scrapper import get_song_list, get_song_info
-from preprocessor import bert_tokenizer
-from predictions import predictions
+from utils.scrapper import get_song_list
+from predictions import recommends
 
 app = FastAPI()
 
 
-@app.get("/root")
+@app.get("/")
 async def root():
     return {"result": "Hello World"}
 
@@ -21,12 +20,9 @@ async def get_songs_info(query: str):
 
 @app.get("/predictions")
 async def recommends_songs(song_id: str):
-    print(song_id)
     try:
-        song = get_song_info(song_id)
-        lylics = song["lyrics"]
-    except:
+        songs = recommends(song_id)
+    except Exception as e:
+        print(e)
         raise HTTPException(status_code=404, detail="검색결과가 없습니다.")
-    input_ids, attention_mask = bert_tokenizer(lylics)
-    result = predictions(input_ids, attention_mask)[0]
-    return {"result": {"predictions": result.tolist()}}
+    return {"result": songs}
