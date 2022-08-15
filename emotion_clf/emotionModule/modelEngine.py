@@ -98,7 +98,7 @@ class engine:
                 print("epoch {} test acc {}".format(e+1, test_acc / (batch_id+1)))  
 
                 
-    def predict(self, new_text:list, preprocessor, return_max_only = True):
+    def predict(self, new_text:list, preprocessor, aggregate = False, return_max_only = True, ):
         data_len = len(new_text)
         new_ds = Dataset.from_dict({"text" : new_text, "class_idx": [0] * data_len})
         tok_new_ds = preprocessor.tokenize(new_ds)
@@ -115,10 +115,12 @@ class engine:
             probs = F.softmax(out, dim = 1).detach().cpu().numpy()
             probs_array.extend(probs)
         probs_array = np.array(probs_array)
+        if aggregate:
+            probs_array = probs_array.mean(axis = 0)
         if return_max_only:
-            return (np.argmax(probs_array, axis = 1), probs_array)
+            return (np.argmax(probs_array, axis = -1), probs_array)
         else:
-            return ((-probs_array).argsort(axis = 1), probs_array)
+            return ((-probs_array).argsort(axis = -1), probs_array)
 
         
 def calc_accuracy(X,Y):
