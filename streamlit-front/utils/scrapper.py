@@ -13,7 +13,7 @@ import requests
 
 @st.cache(max_entries=64, show_spinner=False)
 def get_song_list(query):
-    url = f"https://music-recommend-359214.du.r.appspot.com/songs?query={query}"
+    url = f"http://localhost:8000/songs?query={query}"
     response = requests.get(url).json().get("result")
     return response
 
@@ -21,7 +21,7 @@ def get_song_list(query):
 @st.cache(max_entries=64, show_spinner=False)
 def get_recommends(song_id):
     url = (
-        f"https://music-recommend-359214.du.r.appspot.com/predictions?song_id={song_id}"
+        f"http://localhost:8000/predictions?song_id={song_id}"
     )
     response = requests.get(url).json().get("result")
     return response
