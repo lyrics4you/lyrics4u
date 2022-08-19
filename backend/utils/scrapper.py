@@ -22,23 +22,39 @@ def get_song_list(query):
     datas = form.find("tbody").find_all("tr")
     for data in datas:
         song = data.find("a", class_="fc_gray")
+        song_id = song["href"].split(",")[-1].rstrip(");")
         if song:
-            song_id = song["href"].split(",")[-1].rstrip(");")
+            song_id = song_id
             song_url = f"https://www.melon.com/song/detail.htm?songId={song_id}"
+
             response = requests.get(song_url, headers=headers)
             page = bs(response.content, "html.parser")
             artists = page.find("div", class_="artist").find_all(
                 "a", class_="artist_name"
             )
+            cover_link = page.find("a", class_="image_typeAll").find("img")["src"]
+            cover_link = re.sub("/282/", "/512/", cover_link)
+            cover_link = re.sub("/80/", "/100/", cover_link)
             song_info = {
                 "song_id": song_id,
                 "song_title": page.find("div", class_="song_name")
                 .get_text(strip=True)
                 .lstrip("곡명"),
                 "artist": ", ".join([artist["title"] for artist in artists]),
+                "album_title": re.sub(
+                    "[\\xa0]",
+                    " ",
+                    page.find("div", class_="meta").find("a").get_text(strip=True),
+                ),
+                "genre": page.find("div", class_="meta")
+                .find_all("dd")[2]
+                .get_text(strip=True)
+                .split(", ")[0],
+                "album_cover": cover_link,
                 "public_date": page.find("div", class_="meta")
                 .find_all("dd")[1]
                 .get_text(strip=True),
+                "melon": f"https://www.melon.com/song/lyrics.htm?songId={song_id}"
             }
             song_list.append(song_info)
             song_list = [
@@ -54,6 +70,9 @@ def get_song_info(song_id):
     response = requests.get(url, headers=headers)
     page = bs(response.content, "html.parser")
     artists = page.find("div", class_="artist").find_all("a", class_="artist_name")
+    cover_link = page.find("a", class_="image_typeAll").find("img")["src"]
+    cover_link = re.sub("/282/", "/512/", cover_link)
+    cover_link = re.sub("/80/", "/100/", cover_link)
     result = {
         "song_id": song_id,
         "song_title": page.find("div", class_="song_name")
@@ -65,6 +84,7 @@ def get_song_info(song_id):
             " ",
             page.find("div", class_="meta").find("a").get_text(strip=True),
         ),
+        "album_cover": cover_link,
         "public_date": page.find("div", class_="meta")
         .find_all("dd")[1]
         .get_text(strip=True),

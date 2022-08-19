@@ -1,0 +1,7 @@
+fastapi
+transformers
+torch
+beautifulsoup4
+requests
+numpy
+pytorch_lightning
