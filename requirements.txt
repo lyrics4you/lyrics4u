@@ -1,6 +1,0 @@
-fastapi
-transformers
-torch
-beautifulsoup4
-requests
-numpy
