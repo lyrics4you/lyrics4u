@@ -56,6 +56,13 @@ def recommend_component(area, song_list):
         with col2:
             try:
                 album_cover_component(song_info["album_cover"])
+                with col3:
+                    st.subheader(f"{song_info['song_title']} ({song_info['public_date_DV']})")
+                    st.caption(
+                        f"{song_info['artist']}, {song_info['album_title']}, {song_info['public_date']}, {song_info['genre']}"
+                    )
+                    st.write("**멜론에서 살펴보기**:")
+                    st.info(f"{song_info['melon']}")
             except:
                 album_cover_component(
                     "https://img1.daumcdn.net/thumb/R1280x0.fjpg/?fname=http://t1.daumcdn.net/brunch/service/user/cnoC/image/6n5cXdQLDt3_hJi8PCyvtduleAU.jpg"
@@ -67,18 +74,10 @@ def recommend_component(area, song_list):
                     )
                     st.write("**멜론에서 살펴보기**:")
                     st.info(f"{song_info['melon']}")
-                    area.write("---")
                     st.write("**참고해주세요**:")
                     st.warning(f"해당 노래는 앨범 커버를 받아올 수 없어 보노보노로 대체합니다. 헤헤 😉")
-                continue
 
-        with col3:
-            st.subheader(f"{song_info['song_title']} ({song_info['public_date_DV']})")
-            st.caption(
-                f"{song_info['artist']}, {song_info['album_title']}, {song_info['public_date']}, {song_info['genre']}"
-            )
-            st.write("**멜론에서 살펴보기**:")
-            st.info(f"{song_info['melon']}")
+
         with area.expander("감정 확인하기"):
             emotion_text = [s.strip("'") for s in song_info["emotions"].strip('][').split(', ')]
             emotion_props = [float(f) for f in song_info["probs"].strip('][').split(', ')]
