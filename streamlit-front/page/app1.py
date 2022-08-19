@@ -61,14 +61,14 @@ def app():
     with col2:
         song_info_component(song_info)
 
-    if not recommends:
+    if isinstance(recommends, str):
         summary_area.metric("첫 번째 예측", "가사없음", "가사 없음", delta_color="off")
     else:
         summary_component(summary_area, recommends["emotions"])
 
     tab1 = lyrics_area.tabs(["🎙 추천리스트"])[0]
 
-    if not recommends:
+    if isinstance(recommends, str):
         tab1.warning("😭 가사가 존재하지 않아요! 다른 노래를 찾아보세요!")
     else:
         recommend_component(tab1, recommends["recommend"])
