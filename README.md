@@ -5,15 +5,15 @@
 
 
 ## 서비스 배포 (한글 가사만 지원)
-[<img src="https://user-images.githubusercontent.com/83461987/188151587-19b95176-94ea-4d4a-8323-df28e45057ac.png" height="64">](https://elleryvernon-music-streamlit-main-8kjgj9.streamlitapp.com/)
+[<img src="https://user-images.githubusercontent.com/83461987/188151587-19b95176-94ea-4d4a-8323-df28e45057ac.png" height="48">](https://elleryvernon-music-streamlit-main-8kjgj9.streamlitapp.com/)
 
 ## 서비스 예상도
-[<img src="https://user-images.githubusercontent.com/83461987/188152123-44455174-f34f-46f5-8eaa-25eb5fb4f257.png" height="64">](https://lylics4u.vercel.app/)
+[<img src="https://user-images.githubusercontent.com/83461987/188152123-44455174-f34f-46f5-8eaa-25eb5fb4f257.png" height="48">](https://lylics4u.vercel.app/)
 
 ![deploy example](img/deploy_example.png)
 
 ## 시연 영상
-[<img src="https://user-images.githubusercontent.com/83461987/188150930-cfc28b2d-30bb-4e3b-b28f-0ff6d88d66a7.png" height="64">](https://youtu.be/mcY8ym3lohg)
+[<img src="https://user-images.githubusercontent.com/83461987/188150930-cfc28b2d-30bb-4e3b-b28f-0ff6d88d66a7.png" height="48">](https://youtu.be/mcY8ym3lohg)
 
 ## 프로젝트 주제
 
