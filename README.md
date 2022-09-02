@@ -10,7 +10,7 @@
 ![deploy example](https://user-images.githubusercontent.com/83461987/188148976-3179954b-d6a9-4d71-a43f-264e26dec1b8.png)
 
 ## 서비스 예상도
-[예상도 ](https://lylics4u.vercel.app/)
+[예상도 바로가기](https://lylics4u.vercel.app/)
 
 ![deploy example](img/deploy_example.png)
 
