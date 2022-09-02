@@ -8,7 +8,7 @@
 [![서비스 바로가기](https://user-images.githubusercontent.com/83461987/188151587-19b95176-94ea-4d4a-8323-df28e45057ac.png)](https://elleryvernon-music-streamlit-main-8kjgj9.streamlitapp.com/)
 
 ## 서비스 예상도
-[예상도 바로가기](https://lylics4u.vercel.app/)
+[![예상도 바로가기](https://user-images.githubusercontent.com/83461987/188152123-44455174-f34f-46f5-8eaa-25eb5fb4f257.png)](https://lylics4u.vercel.app/)
 
 ![deploy example](img/deploy_example.png)
 
