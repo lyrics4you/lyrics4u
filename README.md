@@ -5,17 +5,18 @@
 
 
 ## 서비스 배포
+[서비스 바로가기](https://elleryvernon-music-streamlit-main-8kjgj9.streamlitapp.com/)
 
-[streamlit link](https://elleryvernon-music-streamlit-main-8kjgj9.streamlitapp.com/)
+![deploy example](https://user-images.githubusercontent.com/83461987/188148976-3179954b-d6a9-4d71-a43f-264e26dec1b8.png)
+
+## 서비스 예상도
+[예상도 ](https://lylics4u.vercel.app/)
+
+![deploy example](img/deploy_example.png)
 
 ## 시연 영상
 
 [[멋사 AI 6기] lyrics4u - 가사기반 노래추천 서비스](https://youtu.be/mcY8ym3lohg)
-
-## 서비스 예상도
-[lyrics4u](https://lylics4u.vercel.app/)
-
-![deploy example](img/deploy_example.png)
 
 ## 프로젝트 주제
 
