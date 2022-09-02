@@ -13,7 +13,7 @@
 ![deploy example](img/deploy_example.png)
 
 ## 시연 영상
-[![lyrics4u](https://user-images.githubusercontent.com/83461987/188150930-cfc28b2d-30bb-4e3b-b28f-0ff6d88d66a7.png){: height="100px"}](https://youtu.be/mcY8ym3lohg)
+[![lyrics4u](https://user-images.githubusercontent.com/83461987/188150930-cfc28b2d-30bb-4e3b-b28f-0ff6d88d66a7.png){: width="100px" height="100px"}](https://youtu.be/mcY8ym3lohg)
 
 ## 프로젝트 주제
 
