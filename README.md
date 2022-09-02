@@ -2,7 +2,7 @@
 
 ![main logo](img/main_logo.png)
 
-![deploy example](img/deploy_example.png)
+
 
 ### 서비스 배포
 
@@ -13,8 +13,8 @@
 [[멋사 AI 6기] lyrics4u - 가사기반 노래추천 서비스](https://youtu.be/mcY8ym3lohg)
 
 ### 서비스 예상도
-
 [lyrics4u](https://lylics4u.vercel.app/)
+![deploy example](img/deploy_example.png)
 
 ### 프로젝트 주제
 
