@@ -51,7 +51,7 @@
 
 [GitHub - searle-j/KOTE: Korean Online That-gul Emotions Dataset](https://github.com/searle-j/KOTE)
 
-### 시연 연상
+### 시연 영상
 
 [[멋사 AI 6기] lyrics4u - 가사기반 노래추천 서비스](https://youtu.be/mcY8ym3lohg)
 
