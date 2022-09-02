@@ -4,7 +4,7 @@
 
 
 
-## 서비스 배포
+## 서비스 배포 (한글 가사만 지원)
 [서비스 바로가기](https://elleryvernon-music-streamlit-main-8kjgj9.streamlitapp.com/)
 
 ![deploy example](https://user-images.githubusercontent.com/83461987/188149334-bbd75ab3-2e38-4adb-a6f1-603f92fbb965.png)
