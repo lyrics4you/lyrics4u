@@ -7,7 +7,7 @@
 ## 서비스 배포
 [서비스 바로가기](https://elleryvernon-music-streamlit-main-8kjgj9.streamlitapp.com/)
 
-![deploy example](https://user-images.githubusercontent.com/83461987/188148976-3179954b-d6a9-4d71-a43f-264e26dec1b8.png)
+![deploy example](https://user-images.githubusercontent.com/83461987/188149334-bbd75ab3-2e38-4adb-a6f1-603f92fbb965.png)
 
 ## 서비스 예상도
 [예상도 바로가기](https://lylics4u.vercel.app/)
