@@ -15,8 +15,7 @@
 ![deploy example](img/deploy_example.png)
 
 ## 시연 영상
-
-[[멋사 AI 6기] lyrics4u - 가사기반 노래추천 서비스](https://youtu.be/mcY8ym3lohg)
+[![lyrics4u](https://user-images.githubusercontent.com/83461987/188150930-cfc28b2d-30bb-4e3b-b28f-0ff6d88d66a7.png)](https://youtu.be/mcY8ym3lohg)
 
 ## 프로젝트 주제
 
