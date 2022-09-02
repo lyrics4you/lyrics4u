@@ -5,7 +5,7 @@
 
 
 ## 서비스 배포 (한글 가사만 지원)
-[서비스 바로가기](https://elleryvernon-music-streamlit-main-8kjgj9.streamlitapp.com/)
+[![서비스 바로가기](https://user-images.githubusercontent.com/83461987/188151587-19b95176-94ea-4d4a-8323-df28e45057ac.png)](https://elleryvernon-music-streamlit-main-8kjgj9.streamlitapp.com/)
 
 ![deploy example](https://user-images.githubusercontent.com/83461987/188149334-bbd75ab3-2e38-4adb-a6f1-603f92fbb965.png)
 
