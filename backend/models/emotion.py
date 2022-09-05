@@ -52,9 +52,9 @@ LABELS = ['불평/불만',
 label_dict = dict(zip(range(len(LABELS)), LABELS))
 
 class EmotionClassifier:
-    def __init__(self, label_dict=label_dict, W_PATH):
+    def __init__(self, label_dict=label_dict, W_PATH = "data/kote_pytorch_lightning.bin"):
         self.model = load_model()
-        self.model.load_state_dict(torch.load(W_PATH = "data/kote_pytorch_lightning.bin"))
+        self.model.load_state_dict(torch.load(W_PATH))
         self.label_dict = label_dict
 
     def classify(self, text):
